@@ -8,7 +8,7 @@
     <head>
         <!-- Meta, title, CSS, favicons, etc. -->
         <meta charset="utf-8">
-        <title>Sree Gokulam Arts n Science College</title>    
+        <title>Sree Gokulam Arts and Science College</title>    
 
 
 
