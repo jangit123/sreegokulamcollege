@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Dec, 2016 1:24:10 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.utils.map.Userrolemaster" table="USERROLEMASTER" schema="SGC">
+        <id name="id" type="string">
+            <column name="ID" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="rolename" type="string">
+            <column name="ROLENAME" length="100" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="REMARKS" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

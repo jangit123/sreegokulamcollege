@@ -1,0 +1,43 @@
+/*
+Name: Flat Forms Pack
+Creator: Denis Saidov
+Version: 0.1
+Website: www.dsaidov.com
+2014 © All rights reserved! Selling and distributing exclusively via Envato Marketplaces.
+*/
+
+body{
+  background-color: #fff;
+}
+
+.onam-bg{
+
+	background-image:url(../images/onam-chit-bg.jpg);;
+	background-repeat:no-repeat;
+	
+	}
+
+.login h1 a {
+	color:white;
+}
+
+a {
+	color: #23B86C;
+}
+
+.button, .magic-upload-button .file-input-wrapper {
+	background-color: #db6507;
+}
+
+.button:hover, .magic-upload-button:hover .file-input-wrapper:hover{
+	background-color: #c60c09;
+}
+
+#flat-forms-pack h3 {
+	color: #ecf0f1;
+}
+
+#flat-forms-pack .footnote .redirect {
+	color: white;
+}
+

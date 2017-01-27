@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Dec, 2016 1:24:10 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.utils.map.UserRolePrevilege" table="USER_ROLE_PREVILEGE" schema="SGC">
+        <id name="id" type="string">
+            <column name="ID" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="roleId" type="string">
+            <column name="ROLE_ID" length="10" not-null="true" />
+        </property>
+        <property name="menuId" type="string">
+            <column name="MENU_ID" length="10" not-null="true" />
+        </property>
+        <property name="submenuId" type="string">
+            <column name="SUBMENU_ID" length="10" not-null="true" />
+        </property>
+        <property name="menuOrder" type="string">
+            <column name="MENU_ORDER" length="10" />
+        </property>
+        <property name="active" type="java.lang.Character">
+            <column name="ACTIVE" length="1" />
+        </property>
+        <property name="enteredBy" type="string">
+            <column name="ENTERED_BY" length="50" />
+        </property>
+        <property name="entereddate" type="date">
+            <column name="ENTEREDDATE" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

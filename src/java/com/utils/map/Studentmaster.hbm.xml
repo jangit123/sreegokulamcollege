@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Dec, 2016 1:24:10 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.utils.map.Studentmaster" table="STUDENTMASTER" schema="SGC">
+        <id name="id" type="string">
+            <column name="ID" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="collegeid" type="string">
+            <column name="COLLEGEID" length="10" />
+        </property>
+        <property name="admissionNo" type="string">
+            <column name="ADMISSION_NO" length="20" />
+        </property>
+        <property name="doa" type="date">
+            <column name="DOA" length="7" />
+        </property>
+        <property name="academicyear" type="string">
+            <column name="ACADEMICYEAR" length="10" />
+        </property>
+        <property name="admissiontocourse" type="string">
+            <column name="ADMISSIONTOCOURSE" length="10" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="50" />
+        </property>
+        <property name="sex" type="string">
+            <column name="SEX" length="1" />
+        </property>
+        <property name="dob" type="date">
+            <column name="DOB" length="7" />
+        </property>
+        <property name="nationality" type="string">
+            <column name="NATIONALITY" length="30" />
+        </property>
+        <property name="religion" type="string">
+            <column name="RELIGION" length="20" />
+        </property>
+        <property name="caste" type="string">
+            <column name="CASTE" length="15" />
+        </property>
+        <property name="bloodgroup" type="string">
+            <column name="BLOODGROUP" length="5" />
+        </property>
+        <property name="FName" type="string">
+            <column name="F_NAME" length="40" />
+        </property>
+        <property name="MName" type="string">
+            <column name="M_NAME" length="30" />
+        </property>
+        <property name="FEducation" type="java.lang.Short">
+            <column name="F_EDUCATION" precision="4" scale="0" />
+        </property>
+        <property name="MEducation" type="java.lang.Short">
+            <column name="M_EDUCATION" precision="4" scale="0" />
+        </property>
+        <property name="FOccupation" type="string">
+            <column name="F_OCCUPATION" length="30" />
+        </property>
+        <property name="FOphone" type="string">
+            <column name="F_OPHONE" length="50" />
+        </property>
+        <property name="MOaddress" type="string">
+            <column name="M_OADDRESS" length="200" />
+        </property>
+        <property name="MOphone" type="string">
+            <column name="M_OPHONE" length="50" />
+        </property>
+        <property name="familyIncome" type="string">
+            <column name="FAMILY_INCOME" length="10" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="200" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" length="30" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" length="30" />
+        </property>
+        <property name="country" type="string">
+            <column name="COUNTRY" length="30" />
+        </property>
+        <property name="zip" type="string">
+            <column name="ZIP" length="10" />
+        </property>
+        <property name="telNo" type="string">
+            <column name="TEL_NO" length="50" />
+        </property>
+        <property name="mobileNo" type="string">
+            <column name="MOBILE_NO" length="20" />
+        </property>
+        <property name="EMail" type="string">
+            <column name="E_MAIL" length="40" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="REMARKS" length="150" />
+        </property>
+        <property name="mothertongue" type="string">
+            <column name="MOTHERTONGUE" length="20" />
+        </property>
+        <property name="secondlanguage" type="string">
+            <column name="SECONDLANGUAGE" length="20" />
+        </property>
+        <property name="prevSchDet" type="string">
+            <column name="PREV_SCH_DET" length="50" />
+        </property>
+        <property name="prevSchoolAddr" type="string">
+            <column name="PREV_SCHOOL_ADDR" length="200" />
+        </property>
+        <property name="prevClass" type="string">
+            <column name="PREV_CLASS" length="10" />
+        </property>
+        <property name="prevBoard" type="string">
+            <column name="PREV_BOARD" length="20" />
+        </property>
+        <property name="enteredby" type="string">
+            <column name="ENTEREDBY" length="10" />
+        </property>
+        <property name="entereddt" type="date">
+            <column name="ENTEREDDT" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

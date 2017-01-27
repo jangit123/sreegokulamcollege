@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Dec, 2016 1:24:10 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.utils.map.Submenumaster" table="SUBMENUMASTER" schema="SGC">
+        <id name="id" type="string">
+            <column name="ID" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="menuid" type="string">
+            <column name="MENUID" length="10" />
+        </property>
+        <property name="submenu" type="string">
+            <column name="SUBMENU" length="30" />
+        </property>
+        <property name="pagelink" type="string">
+            <column name="PAGELINK" length="100" />
+        </property>
+        <property name="enteredby" type="string">
+            <column name="ENTEREDBY" length="10" />
+        </property>
+        <property name="entereddt" type="date">
+            <column name="ENTEREDDT" length="7" />
+        </property>
+        <property name="menuorder" type="string">
+            <column name="MENUORDER" length="10" />
+        </property>
+        <property name="status" type="java.lang.Character">
+            <column name="STATUS" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

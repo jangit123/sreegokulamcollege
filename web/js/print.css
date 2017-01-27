@@ -1,0 +1,54 @@
+/* apply a white background for printouts */
+
+body
+{
+  background:#fff;
+  background-image:none;
+  width:893px;
+  overflow:visible;
+  overflow-y:visible;  /* another setting is necessary for IE, see ie_hacks.css */
+  overflow-x:visible;  /* another setting is necessary for IE, see ie_hacks.css */
+}
+
+/* Layout of the page content */
+
+div#thepage
+{
+  padding:0;
+  margin:2px;
+  background-image:none;
+  background-color:#ccc;
+  border:1px solid #3A5C86;
+}
+
+/* Let's hide various objects from the header (especially with statusinfo or navigation) that do not make too much sense when printed */
+
+#alarmnotify,
+#searchlogo, 
+#searchbox, 
+#searchstring, 
+#statborder,
+div#refreshmessage,
+div#menus,
+.buttonbox
+{
+display:none;
+}
+
+/* Overrule some settings form jquery.tabs.css */
+.tabs-hide 
+{
+	display: none;
+}
+.anchors
+{
+	display: block;
+}
+
+.tabs-nav { /* auto clear */
+    display: inline-block;
+}
+
+/* Some Tweaks */
+
+thead {display:table-header-group} 

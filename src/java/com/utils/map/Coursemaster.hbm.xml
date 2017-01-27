@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Dec, 2016 1:24:10 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.utils.map.Coursemaster" table="COURSEMASTER" schema="SGC">
+        <id name="id" type="string">
+            <column name="ID" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="coursetypeid" type="string">
+            <column name="COURSETYPEID" length="10" />
+        </property>
+        <property name="coursename" type="string">
+            <column name="COURSENAME" length="30" />
+        </property>
+        <property name="noOfSemester" type="string">
+            <column name="NO_OF_SEMESTER" length="10" />
+        </property>
+        <property name="collegeid" type="string">
+            <column name="COLLEGEID" length="10" />
+        </property>
+        <property name="academicYear" type="string">
+            <column name="ACADEMIC_YEAR" length="10" />
+        </property>
+        <property name="effectiveDate" type="date">
+            <column name="EFFECTIVE_DATE" length="7" />
+        </property>
+        <property name="enteredby" type="string">
+            <column name="ENTEREDBY" length="10" />
+        </property>
+        <property name="entereddt" type="date">
+            <column name="ENTEREDDT" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

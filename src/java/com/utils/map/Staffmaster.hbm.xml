@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 4 Jan, 2017 3:34:14 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.utils.map.Staffmaster" table="STAFFMASTER" schema="SGC">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0"/>
+            <generator class="sequence">
+                <param name="sequence">STAFFMASTER_SEQ</param>
+            </generator>
+        </id>
+
+        <property name="staffid" type="string">
+            <column name="STAFFID" length="15" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="TITLE" length="5" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="30" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="50" />
+        </property>
+        <property name="sex" type="java.lang.Character">
+            <column name="SEX" length="1" />
+        </property>
+        <property name="stafftype" type="string">
+            <column name="STAFFTYPE" length="10" />
+        </property>
+        <property name="empStatus" type="java.lang.Character">
+            <column name="EMP_STATUS" length="1" />
+        </property>
+        <property name="maritalStatus" type="java.lang.Character">
+            <column name="MARITAL_STATUS" length="1" />
+        </property>
+        <property name="departmentid" type="string">
+            <column name="DEPARTMENTID" length="2" />
+        </property>
+        <property name="subDept" type="string">
+            <column name="SUB_DEPT" length="10" />
+        </property>
+        <property name="desig" type="string">
+            <column name="DESIG" length="30" />
+        </property>
+        <property name="bloodgroup" type="string">
+            <column name="BLOODGROUP" length="2" />
+        </property>
+        <property name="dateofbirth" type="date">
+            <column name="DATEOFBIRTH" length="7" />
+        </property>
+        <property name="dateofjoin" type="date">
+            <column name="DATEOFJOIN" length="7" />
+        </property>
+        <property name="qualification" type="string">
+            <column name="QUALIFICATION" length="250" />
+        </property>
+        <property name="experiance" type="string">
+            <column name="EXPERIANCE" length="250" />
+        </property>
+        <property name="guardian" type="string">
+            <column name="GUARDIAN" length="30" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="MOBILE" length="15" />
+        </property>
+        <property name="resino" type="string">
+            <column name="RESINO" length="15" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="100" />
+        </property>
+        <property name="accountno" type="string">
+            <column name="ACCOUNTNO" length="50" />
+        </property>
+        <property name="bankid" type="string">
+            <column name="BANKID" length="30" />
+        </property>
+        <property name="bankname" type="string">
+            <column name="BANKNAME" length="30" />
+        </property>
+        <property name="pfno" type="string">
+            <column name="PFNO" length="15" />
+        </property>
+        <property name="esino" type="string">
+            <column name="ESINO" length="15" />
+        </property>
+        <property name="panno" type="string">
+            <column name="PANNO" length="30" />
+        </property>
+        <property name="active" type="java.lang.Character">
+            <column name="ACTIVE" length="1" />
+        </property>
+        <property name="houseNoName" type="string">
+            <column name="HOUSE_NO_NAME" length="100" />
+        </property>
+        <property name="post" type="string">
+            <column name="POST" length="50" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" length="50" />
+        </property>
+        <property name="distid" type="string">
+            <column name="DISTID" length="2" />
+        </property>
+        <property name="stateid" type="string">
+            <column name="STATEID" length="2" />
+        </property>
+        <property name="countryid" type="string">
+            <column name="COUNTRYID" length="2" />
+        </property>
+        <property name="pin" type="string">
+            <column name="PIN" length="8" />
+        </property>
+        <property name="tutor" type="java.lang.Character">
+            <column name="TUTOR" length="1" />
+        </property>
+        <property name="teachexp" type="string">
+            <column name="TEACHEXP" length="250" />
+        </property>
+        <property name="nonteachexp" type="string">
+            <column name="NONTEACHEXP" length="250" />
+        </property>
+        <property name="age" type="string">
+            <column name="AGE" length="5" />
+        </property>
+        <property name="confirmdate" type="date">
+            <column name="CONFIRMDATE" length="7" />
+        </property>
+        <property name="approve" type="java.lang.Character">
+            <column name="APPROVE" length="1" />
+        </property>
+        <property name="dutyRequired" type="java.lang.Character">
+            <column name="DUTY_REQUIRED" length="1" />
+        </property>
+        <property name="punchingrequired" type="java.lang.Character">
+            <column name="PUNCHINGREQUIRED" length="1" />
+        </property>
+        <property name="uanNo" type="string">
+            <column name="UAN_NO" length="30" />
+        </property>
+        <property name="careOf" type="string">
+            <column name="CARE_OF" length="30" />
+        </property>
+        <property name="electionId" type="string">
+            <column name="ELECTION_ID" length="30" />
+        </property>
+        <property name="uan" type="string">
+            <column name="UAN" length="100" />
+        </property>
+        <property name="aadharno" type="string">
+            <column name="AADHARNO" length="100" />
+        </property>
+        <property name="image" type="binary">
+            <column name="IMAGE" />
+        </property>
+        <property name="resigned" type="java.lang.Character">
+            <column name="RESIGNED" length="1" />
+        </property>
+        <property name="verified" type="java.lang.Character">
+            <column name="VERIFIED" length="1" />
+        </property>
+        <property name="referencestaffid" type="string">
+            <column name="REFERENCESTAFFID" length="25" />
+        </property>
+        <property name="stipend" type="java.lang.Character">
+            <column name="STIPEND" length="1" />
+        </property>
+        <property name="visiting" type="java.lang.Character">
+            <column name="VISITING" length="1" />
+        </property>
+        <property name="inchargeDept" type="java.lang.Character">
+            <column name="INCHARGE_DEPT" length="1" />
+        </property>
+        <property name="collegeid" type="string">
+            <column name="COLLEGEID" length="10" />
+        </property>
+        <property name="academicYear" type="string">
+            <column name="ACADEMIC_YEAR" length="10" />
+        </property>
+        <property name="enteredby" type="string">
+            <column name="ENTEREDBY" length="50" />
+        </property>
+        <property name="entereddate" type="date" formula="sysdate">
+            <column name="ENTEREDDATE" length="7" />
+        </property>
+        <property name="lastModifiedBy" type="string">
+            <column name="LAST_MODIFIED_BY" length="50" />
+        </property>
+        <property name="lastModifiedDate" type="date">
+            <column name="LAST_MODIFIED_DATE" length="7" />
+        </property>
+        <property name="caste" type="string">
+            <column name="CASTE" length="3" />
+        </property>
+        <property name="castename" type="string">
+            <column name="CASTENAME" length="20" />
+        </property>
+        <property name="religion" type="string">
+            <column name="RELIGION" length="3" />
+        </property>
+        <property name="handicap" type="string">
+            <column name="HANDICAP" length="1" />
+        </property>
+         <property name="permHouseNoName" type="string">
+            <column name="PERM_HOUSE_NO_NAME" length="100" />
+        </property>
+        <property name="permPost" type="string">
+            <column name="PERM_POST" length="50" />
+        </property>
+        <property name="permCity" type="string">
+            <column name="PERM_CITY" length="50" />
+        </property>
+        <property name="permDistid" type="string">
+            <column name="PERM_DISTID" length="2" />
+        </property>
+        <property name="permStateid" type="string">
+            <column name="PERM_STATEID" length="2" />
+        </property>
+        <property name="permCountryid" type="string">
+            <column name="PERM_COUNTRYID" length="2" />
+        </property>
+        <property name="permEmail" type="string">
+            <column name="PERM_EMAIL" length="100" />
+        </property>
+        <property name="permPin" type="string">
+            <column name="PERM_PIN" length="8" />
+        </property>
+        <property name="hod" type="java.lang.Character">
+            <column name="HOD" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

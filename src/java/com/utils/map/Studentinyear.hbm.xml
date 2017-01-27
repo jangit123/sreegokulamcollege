@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Dec, 2016 1:24:10 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.utils.map.Studentinyear" table="STUDENTINYEAR" schema="SGC">
+        <id name="id" type="string">
+            <column name="ID" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="collegeid" type="string">
+            <column name="COLLEGEID" length="10" />
+        </property>
+        <property name="admissionNo" type="string">
+            <column name="ADMISSION_NO" length="20" />
+        </property>
+        <property name="activeyear" type="string">
+            <column name="ACTIVEYEAR" length="10" />
+        </property>
+        <property name="semesterId" type="string">
+            <column name="SEMESTER_ID" length="10" />
+        </property>
+        <property name="promoted" type="java.lang.Character">
+            <column name="PROMOTED" length="1" />
+        </property>
+        <property name="active" type="java.lang.Character">
+            <column name="ACTIVE" length="1" />
+        </property>
+        <property name="courseid" type="string">
+            <column name="COURSEID" length="10" />
+        </property>
+        <property name="hostelReq" type="java.lang.Character">
+            <column name="HOSTEL_REQ" length="1" />
+        </property>
+        <property name="messReq" type="java.lang.Character">
+            <column name="MESS_REQ" length="1" />
+        </property>
+        <property name="transportReq" type="java.lang.Character">
+            <column name="TRANSPORT_REQ" length="1" />
+        </property>
+        <property name="enteredby" type="string">
+            <column name="ENTEREDBY" length="10" />
+        </property>
+        <property name="entereddt" type="date">
+            <column name="ENTEREDDT" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

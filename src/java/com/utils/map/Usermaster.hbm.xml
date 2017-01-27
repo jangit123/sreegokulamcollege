@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Dec, 2016 1:24:10 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.utils.map.Usermaster" table="USERMASTER" schema="SGC">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="USERNAME" length="100" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="20" />
+        </property>
+        <property name="staffid" type="string">
+            <column name="STAFFID" length="15" />
+        </property>
+        <property name="roleid" type="string">
+            <column name="ROLEID" length="10" />
+        </property>
+        <property name="collegeid" type="string">
+            <column name="COLLEGEID" length="10" />
+        </property>
+        <property name="active" type="java.lang.Character">
+            <column name="ACTIVE" length="1" />
+        </property>
+        <property name="loginmobileno" type="string">
+            <column name="LOGINMOBILENO" length="15" />
+        </property>
+        <property name="createdDt" type="date">
+            <column name="CREATED_DT" length="7" />
+        </property>
+        <property name="createdby" type="string">
+            <column name="CREATEDBY" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
